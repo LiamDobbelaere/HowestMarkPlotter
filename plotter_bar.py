@@ -16,5 +16,6 @@ plt.bar(ux, uy, label='Unity', color="#000000")
 plt.xticks(gx, rotation='vertical')
 plt.ylabel('ms')
 plt.title(test)
-plt.legend()
+plt.legend(bbox_to_anchor=(1, 1),
+          bbox_transform=plt.gcf().transFigure)
 plt.show()
